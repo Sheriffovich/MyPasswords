@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.mypasswords.ViewPincode">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/colorBackground"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <com.kevalpatel.passcodeview.PinView
+        android:id="@+id/pattern_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView"
+        app:fingerprintTextColor="@color/selectorDrawable"
+        app:fingerprintTextSize="@dimen/text_size"
+        app:giveTactileFeedback="true"
+        app:titleTextColor="@android:color/white"/>
+
+</RelativeLayout>
